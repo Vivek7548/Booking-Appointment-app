@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <!-- Add the Axios script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .userEntry {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .editBtn, .deleteBtn {
+            cursor: pointer;
+            color: blue;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Management</h1>
+    
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+
+        <button type="button" onclick="addUser()">Submit</button>
+    </form>
+
+    <div id="userList">
+        <!-- User entries will be displayed here -->
+    </div>
+
+<script src="script.js"> </script>
+</body>
+</html>
